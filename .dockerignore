@@ -1,4 +1,4 @@
-**/.git
+**/Dockerfile
 **/.dockerignore
 **/.gitignore
 **/*.sw?

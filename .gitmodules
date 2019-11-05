@@ -1,3 +1,6 @@
 [submodule "riak"]
 	path = riak
 	url = https://github.com/basho/riak
+[submodule "evm"]
+	path = evm
+	url = https://github.com/robisonsantos/evm
