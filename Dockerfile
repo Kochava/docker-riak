@@ -48,9 +48,14 @@ RUN mkdir -p /var/lib/riak
 COPY --from=stage0 /build/riak/rel/riak /usr/local/riak
 COPY service /var/service
 COPY riak.conf /usr/local/riak/etc/
+COPY riak.conf.vars /usr/local/riak/
+COPY docker-entrypoint.sh /
+
+ENV PATH=/usr/local/riak/bin:$PATH
+
+EXPOSE 8098/tcp 8087/tcp
 
 WORKDIR /usr/local/riak
 STOPSIGNAL TERM
-ENTRYPOINT ["/usr/bin/runsv", "/var/service/riak"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
 
-EXPOSE 8098/tcp 8087/tcp
