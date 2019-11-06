@@ -215,8 +215,10 @@ with bind-mounted riak.conf files, as it will append lines to the file.
 License
 -------
 
-All files under this repository are licensed under the Apache License Version
-2.0:
+All files under this repository are licensed under the Apache License Version 2.0.
+
+One exception is made for riak.conf, which is under the same license, but is
+copyright 2013 Basho Technologies, Inc.
 
 ```
 Copyright 2019 Kochava, Inc.
