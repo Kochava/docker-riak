@@ -53,7 +53,7 @@ COPY docker-entrypoint.sh /
 
 ENV PATH=/usr/local/riak/bin:$PATH
 
-EXPOSE 8098/tcp 8087/tcp
+EXPOSE 8098/tcp 8087/tcp 4369/tcp 8099/tcp
 
 WORKDIR /usr/local/riak
 STOPSIGNAL TERM
