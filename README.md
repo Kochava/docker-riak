@@ -38,7 +38,7 @@ following:
 
 ```
 # Start node riak-2:
-$ docker run --detach --env RIAK_NODENAME=riak@riak-2. --name riak-2 kochava/riak
+$ docker run --detach --network riak --env RIAK_NODENAME=riak@riak-2. --name riak-2 kochava/riak
 
 # Join the cluster:
 $ docker exec -it riak-2 riak-admin cluster join riak@riak-1.
