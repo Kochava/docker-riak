@@ -71,6 +71,7 @@ COPY --from=stage0 /build/riak/rel/riak /usr/local/riak
 COPY riak/LICENSE /usr/local/riak/LICENSE
 COPY service /var/service
 COPY riak.conf /usr/local/riak/etc/
+COPY advanced.config /usr/local/riak/etc/
 COPY riak.conf.vars /usr/local/riak/
 COPY docker-entrypoint.sh /
 
