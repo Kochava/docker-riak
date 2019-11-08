@@ -81,7 +81,7 @@ ENV PATH=/usr/local/riak/bin:$PATH
 # Expose HTTP, Protobuf, epmd, and handoff ports.
 # Erlang distribution ports are not exposed here since the ports won't
 # necessarily match up when publishing ports.
-EXPOSE 8098/tcp 8087/tcp 4369/tcp 8099/tcp
+EXPOSE 9080/tcp 8098/tcp 8087/tcp 4369/tcp 8099/tcp
 
 # Set working directory to the release.
 WORKDIR /usr/local/riak
